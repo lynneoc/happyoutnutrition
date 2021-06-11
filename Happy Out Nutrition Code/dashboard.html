@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>Your Dashboard</title>
+<head>
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto" rel="stylesheet">
+    <script src= "https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body id="dashboard">
+
+    
+
+    <a href="index.html"> <img src="images/hon logo.png" class= "logo-dash" alt="Happy Out Nutrition logo"></a>
+
+    <div class='main1' id= 'top'>
+
+        <h2>Calorie Calculator</h2>
+        <br> Add in the information below and this will give you your recommended calories for the day
+
+        <div class="calc-outer-wrap">
+            <div id="form-error" style="display:none;"></div>
+            <form class="calc-form" id="calc-form">
+              <div class="form-fields">
+            
+                <div class="field-outer">
+                  <label for="distance" class="top-label">Age:</label>
+                  <div class="field-items">
+                    <div class="field field-large">         
+                      <input type="text" name="age" id="age" inputmode="numeric" pattern="[0-9]*">
+                    </div>
+                    
+                    <div class="field field-medium">
+                      <select name="gender">
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                               
+                      </select>
+                      
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="field-outer">
+                  <label for="height" class="top-label">Height:</label>
+                  <div class="field-items">
+                    <div class="field">
+                      <input type="text" name="height_ft" id="height-ft" inputmode="numeric" pattern="[0-9]*">
+                      <label for="height-ft">feet</label>
+                    </div>
+                    <div class="field">
+                      <input type="text" name="height_in" id="height-in" inputmode="numeric" pattern="[0-9]*">
+                      <label for="height-in">inches</label>
+                    </div>
+                   <div class="field">
+                      <input type="text" name="height_cm" id="height-cm" inputmode="numeric" pattern="[0-9]*">
+                      <label for="height-cm">or centimeters</label>
+                    </div>       
+                  </div>
+                </div>
+            
+                <div class="field-outer">
+                  <label for="weight" class="top-label">Your weight:</label>
+                  <div class="field-items">
+                    <div class="field field-large">
+                      <input type="text" name="weight" id="weight" inputmode="numeric" pattern="[0-9]*">
+                    </div>
+                    <div class="field field-small">
+                      <select name="weight_unit">
+                        <option value="lb">lb</option>
+                        <option value="kg">kg</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+               <div class="btn-wrap field-outer">
+                <button class="form-submit">Calculate</button>
+              </div>
+              </div>
+            
+            
+            </form>
+            <div id="results" style="display:none;"></div>
+            </div>
+
+    
+  
+        <h2>Hi {{fname}} </h2>
+
+        <h2 id="greating" >ERROR {{fname}}</h2>
+
+    
+</div>
+
+<button class="btn-edit" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Edit My Profile</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          
+        </div>
+
+        
+        <div class="container">
+          <label for="uname"><h5>Age</h5></label>
+          <input type="text" placeholder="Age">
+    
+          <label for="psw"><h5>Weight</h5></label>
+          <input type="password" placeholder="Weight">
+
+          <label for="uname"><h5>Height</h5></label>
+          <input type="text" placeholder="Height" >
+
+          <label for="uname"><h5>Allergies</h5></label>
+          <input type="text" placeholder="Allergies" >
+
+          <label for="uname"><h5>Current medication</h5></label>
+          <input type="text" placeholder="Medication" >
+          
+          <button class="btn-home" type="submit" >Save</button>
+        
+          
+    
+        </div>
+    
+        
+      </form>
+    </div>
+
+
+    <div class="grid-container">
+        <div class="item1"> <img src="images/evelinapng.png" class="profiler" alt= "Profile Image">  </div>
+        <div class="item2"><img src="images/vitamin.png" alt= "Vitamin"> <h5>Vitamin Reference Guide</h5></div>
+        <div class="item3"><img src="images/exercise.png" alt= "Exercise"><h5>Your Exercise Plan</h5></div>  
+        <div class="item4"><img src="images/food.png" alt= "Food"><h5>Your Food Plan</h5></div>
+        <div class="item5"><img src="images/mood.png" alt= "Mood"><h5>Food and Mood</h5></div>
+        <div class="item6"><h5>My Profile</h5>  <button class="btn-edit"> Edit</button>
+            </div>
+        <div class="item7"><img src="images/tracker.png" alt= "Tracker"><h5>Connect Fitness tracker</h5></div>
+        <div class="item8"><img src="images/hormone.png" alt= "Hormone"><h5>Hormone Balance</h5></div>  
+      </div>
+
+
+      
+
+            
+                
+                    <p>Contact via Email: info@happyoutnutrition.com  OR Phone: +353 (0) 87 440 5199
+                 <br>Follow HappyOutNutrition on:
+             </p>
+
+             <ul class="social-icons">
+                <li><a href="https://www.instagram.com"><img src='images/insta.png' /></a></li>
+                <li><a href="https://www.facebook.com"><img src='images/facebook.png' /></a></li>
+                <li><a href="https://twitter.com"><img src='images/twitter.png' /></a></li>
+                <li><a href="https://ie.linkedin.com"><img src='images/linkedin.png' /></a></li>
+            </ul>
+            
+            <script src="scripts/script.js"></script>
+</body>
+
+</html>

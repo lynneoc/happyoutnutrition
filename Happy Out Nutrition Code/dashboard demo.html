@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Your Dashboard</title>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto" rel="stylesheet">
+    <script src= "https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body id="dashboard">
+
+    
+
+      
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          
+        </div>
+
+        
+        <div class="container">
+          <label for="uname"><h5>Username</h5></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><h5>Password</h5></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          
+          <a href="index.html"> <button class="btn-home" type="submit" >Login</button></a>
+        
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+    
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+           <button type="button" class="cancelbtn" onclick="document.getElementById('id01').style.display='none'" >Cancel</button> 
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <a href="index.html"><img src="images/hon logo.png" class= "logo-dash" alt="Happy Out Nutrition logo"></a>
+
+    <div class='main1' id= 'top'>
+
+    
+  
+        <h2>Hi {{fname}} </h2>
+
+        <h2 id="greating" >ERROR {{fname}}</h2>
+
+    
+</div>    
+
+
+
+
+    <div class="grid-container">
+        <div class="item1"> <img src="images/evelinapng.png" class="profiler" alt= "Profile Image">  </div>
+        <div class="item2"><img src="images/vitamin.png" alt= "Vitamin"> <h5>Vitamin Reference Guide</h5></div>
+        <div class="item3"><img src="images/exercise.png" alt= "Exercise"><h5>Your Exercise Plan</h5></div>  
+        <div class="item4"><img src="images/food.png" alt= "Food"><h5>Your Food Plan</h5></div>
+        <div class="item5"><img src="images/mood.png" alt= "Mood"><h5>Food and Mood</h5></div>
+        <div class="item6"><h5>My Profile</h5>  <button class="btn-edit"> Edit</button></div>
+        <div class="item7"><img src="images/tracker.png" alt= "Tracker"><h5>Connect Fitness tracker</h5></div>
+        <div class="item8"><img src="images/hormone.png" alt= "Hormone"><h5>Hormone Balance</h5></div>  
+      </div>
+
+
+      
+
+            
+                
+                    <p>Contact via Email: info@happyoutnutrition.com  OR Phone: +353 (0) 87 440 5199
+                 <br>Follow HappyOutNutrition on:
+             </p>
+
+             <ul class="social-icons">
+                <li><a href="https://www.instagram.com"><img src='images/insta.png' /></a></li>
+                <li><a href="https://www.facebook.com"><img src='images/facebook.png' /></a></li>
+                <li><a href="https://twitter.com"><img src='images/twitter.png' /></a></li>
+                <li><a href="https://ie.linkedin.com"><img src='images/linkedin.png' /></a></li>
+            </ul>
+            
+            <script src="scripts/script.js"></script>
+</body>
+
+</html>
